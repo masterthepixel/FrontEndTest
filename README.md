@@ -10,6 +10,7 @@ One of the core Telmetrix products currently is a React Native Expo app that gui
 - Fork this repo.
 - 'expo install'
 - 'expo start'
+- implement the two screens below
 - When complete, send us the github link to your work.
 
 ### Screen 1: Exercise Explainer
