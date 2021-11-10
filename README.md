@@ -17,24 +17,24 @@ One of the core Telmetrix products currently is a React Native Expo app that gui
 
 The first screen is a quick layout test, to demonstrate your ability to communicate simple instructions to an end user. 
 
-Find any infographic you link under the google link “how to do a squat” and implement it as a simple 3-4 screen explainer. 
+Find any infographic you link under the google link “how to do a squat” and implement it as a simple 3-4 step explainer. It should be one screen. Scrolling is fine.
 
 https://www.google.com/search?q=how+to+do+a+squat+infographic&tbm=isch
 
-You’re free to implement this with whatever UI libraries you need. We’ve included Native Base which we use in production.
+Implement with whatever UI libraries you need. We’ve included Native Base which we use in production.
 
 https://nativebase.io/
 
 
 ### Screen 2: Interactive Angle Detection
 
-The second screen is a recreation of a section of our movement detection routine. The user leans their phone on a desk with the front camera facing the user so that we can analyze their movements. 
+The second screen is a recreation of a section of our movement detection routine. The user leans their phone on a desk with the front camera facing the user so that we can analyze their movements. To do this, we need them to set up their phone facing forward at a stable, usable angle.
 
 Implement a screen that checks to see if the phone is set up at a usable angle.
 
-- Copy our design for an angle detection meter. It should be a vertical bar that has a live indicator showing the current angle of the phone
-- Indicate that we want a phone angle between 70-85 degrees of tilt.
-- Detect if the phone is both a) stable and b) angled correctly at the same time for a period of 3 seconds. Showing a countdown animation is optional, but show some kind of feedback to indicate the user is doing the right thing.
+- Copy our design for an angle detection meter. It should be a vertical bar that has a live indicator showing the current angle of the phone. It doesn't have to be exact. We're looking for usable UI first and foremost.
+- Indicate using hashmarks, a target zone, or some other indicator that we want a phone angle between 70-85 degrees of tilt.
+- Detect if the phone is both a) stable and b) angled correctly at the same time for a period of 3 seconds. Showing a countdown animation is optional, but show some kind of feedback to indicate the user is doing the right thing and should hold position.
 - On success, hide the angle detector and pop up another View indicating a simple placeholder success.
 
 How to implement Accelerometer:
