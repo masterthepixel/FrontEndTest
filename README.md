@@ -1,4 +1,4 @@
-# Senior Front-End Engineer Technical Test - Telmetrix
+# Front-End Engineer Technical Test - Telmetrix
 #### Jason Nolasco <jason@telmetrix.co>
 
 One of the core Telmetrix products currently is a React Native Expo app that guides users through a series of home exercises. We emphasize practical ability, therefore for this technical test, you’ll be recreating two simple screens to demonstrate basic understanding of React Native controls. This task is expected to take about two hours. If you’re unable to complete any part of this test or need clarification, e-mail me at jason@telmetrix.co. 
