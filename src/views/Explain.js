@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import { StyleSheet, Image } from "react-native";
-import { Box, Center, Text, Button, Flex, VStack, HStack } from "native-base";
+import { StyleSheet, Image, View } from "react-native";
+import { Box, Center, Text, Button, VStack, HStack } from "native-base";
 import Swiper from "react-native-swiper";
 
 const Explain = (props) => {
@@ -114,21 +114,25 @@ const Explain = (props) => {
           </VStack>
         </Box>
       </Swiper>
-      <Flex justify="space-between" direction="row" width="100%" px={5}>
-        <Button
-          onPress={() => onChangeIndex(-1)}
-          isDisabled={slideIndex === 0}
-          backgroundColor="gray.500"
-        >
-          {"< Prev"}
-        </Button>
+      <View style={styles.buttonsView}>
+        {slideIndex > 0 ? (
+          <Button
+            onPress={() => onChangeIndex(-1)}
+            isDisabled={slideIndex === 0}
+            backgroundColor="gray.500"
+          >
+            {"< Prev"}
+          </Button>
+        ) : (
+          <View />
+        )}
         <Button
           onPress={() => onChangeIndex(1)}
           backgroundColor={slideIndex === 2 ? "green.600" : "blue.500"}
         >
           {slideIndex === 2 ? "Go to Detection" : "Next >"}
         </Button>
-      </Flex>
+      </View>
     </Center>
   );
 };
@@ -146,6 +150,12 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     resizeMode: "contain",
+  },
+  buttonsView: {
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
   },
 });
 

@@ -3550,6 +3550,15 @@ expo-modules-core@~0.4.4, expo-modules-core@~0.4.7:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
+expo-sensors@^11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-11.0.3.tgz#df40d8d08531fbe543c547f12468074d51da3666"
+  integrity sha512-VTwEpB98l+pb8nML/wDFhQ18LqZ8bBDchX6HaSLdLrrtp7eYOZZ2blOa2pM8VPZa/plOPKW4iMJ3MkmZnO1f3A==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-modules-core "~0.4.4"
+    invariant "^2.2.4"
+
 expo-splash-screen@~0.13.5:
   version "0.13.5"
   resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.13.5.tgz#ece76c092f2ce88e4660a70e532ed47909a01ddd"
@@ -5744,6 +5753,11 @@ react-native-gesture-handler@~1.10.2:
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-progress-circle@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-progress-circle/-/react-native-progress-circle-2.1.0.tgz#62bdf31c76962d10c5c14446b61ff7d05cf0d0ec"
+  integrity sha512-VP0s92bgbTMQy4hQzPU4LlGyFj3z5u7i1HYFG8/yzXXfGkX1cxKS4xOlE+OTaObWC99w7Bodi3h8R7En2nQPYw==
 
 react-native-reanimated@~2.2.0:
   version "2.2.4"
